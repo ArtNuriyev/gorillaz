@@ -29,6 +29,8 @@ gem 'pg'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'sendgrid-ruby'
+gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '3-0-stable'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
