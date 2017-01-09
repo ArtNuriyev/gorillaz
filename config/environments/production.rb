@@ -4,15 +4,15 @@ config.action_mailer.perform_deliveries = true
    config.action_mailer.raise_delivery_errors = true
    config.action_mailer.default_options = {from: 'nuriyev1993@gmail.com'}
 
-   config.action_mailer.delivery_method = :smtp
-   config.action_mailer.smtp_settings = {
-   address: 'nuriyev1993@gmail.com',
-   port: 587,
-   domain: 'https://blooming-eyrie-17182.herokuapp.com',
-   user_name: 'nuriyev1993@gmail.com',
-   password: 'ass4mouth',
-   authentication: 'plain',
-   enable_starttls_auto: true }
+config.action_mailer.default_url_options = { :host => 'your.websitedomain.com' }
+ActionMailer::Base.smtp_settings = {
+  :address        => "smtp.sendgrid.net",
+  :port           => "25",
+  :authentication => :plain,
+  :user_name      => ENV['artnuriyev'],
+  :password       => ENV['forklift1'],
+  :domain         => ENV['blooming-eyrie-17182.herokuapp.com']
+}
   # Code is not reloaded between requests.
   config.cache_classes = true
 
