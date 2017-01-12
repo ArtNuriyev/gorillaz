@@ -56,7 +56,6 @@ gem 'spree_auth_devise', '~>3.0.5'
 gem 'spree_gateway', '~>3.0.0'
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '3-0-stable' 
 
-
 group :production do
   gem 'rails_12factor'
 end
