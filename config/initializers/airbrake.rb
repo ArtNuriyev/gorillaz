@@ -12,8 +12,8 @@ Airbrake.configure do |c|
   # project_key navigate to your project's General Settings and copy the values
   # from the right sidebar.
   # https://github.com/airbrake/airbrake-ruby#project_id--project_key
-  c.project_id = 136026
-  c.project_key = '5482d07a2d3717bb55717cb2b69f9ffd'
+  c.project_id = PROJECT_ID
+  c.project_key = 'PROJECT_KEY'
 
   # Configures the root directory of your project. Expects a String or a
   # Pathname, which represents the path to your project. Providing this option
